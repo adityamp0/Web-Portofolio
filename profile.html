@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile – Aditya</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.addEventListener('DOMContentLoaded', () => document.body.classList.add('dark'));
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+            <span>AMP</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portofolio</a></li>
+            <li><a href="certification.html">Certification</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">🌙</button>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="profile">
+        <div class="profile-header">
+            <div class="profile-img-placeholder">👨‍💻</div>
+            <h1 class="section-title">About Me</h1>
+        </div>
+
+        <div class="profile-card">
+            <p>
+                Hi! I'm <b>Aditya Maulana Pamungkas</b>, a Machine Learning Engineer with a deep passion for
+                building intelligent systems and solving real-world problems using data.
+            </p>
+
+            <p>
+                I specialize in designing machine learning pipelines, experimenting with deep learning models,
+                and deploying AI-driven applications. My journey started with curiosity—how machines make
+                decisions—and now I build models that classify, predict, and automate tasks efficiently.
+            </p>
+
+            <p>
+                Besides AI, I enjoy crafting simple but elegant frontend interfaces using
+                <b>HTML, CSS, and JavaScript</b> to complement my projects with a clean UI/UX.
+            </p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>🎓 Education</h4>
+                    <p>Computer Science Student</p>
+                </div>
+                <div class="info-item">
+                    <h4>📍 Location</h4>
+                    <p>Indonesia</p>
+                </div>
+                <div class="info-item">
+                    <h4>💼 Current Interest</h4>
+                    <p>Machine Learning</p>
+                </div>
+                <div class="info-item">
+                    <h4>🚀 Passion</h4>
+                    <p>Artificial Intelligence & Data Science</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links" style="margin-top: 0; margin-bottom: 1rem;">
+            <a href="https://github.com/adityamp0" target="_blank" class="social-item" title="GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/adityamaulanapamungkas/" target="_blank" class="social-item"
+                title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2026 Aditya Maulana Pamungkas. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

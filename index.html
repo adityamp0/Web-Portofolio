@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya – Machine Learning Engineer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script>
+        // Immediate theme application to prevent flicker
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.addEventListener('DOMContentLoaded', () => document.body.classList.add('dark'));
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+            <span>AMP</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="portfolio.html">Portofolio</a></li>
+            <li><a href="certification.html">Certification</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">🌙</button>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1 id="welcomeText">Hi, Welcome!</h1>
+        <p class="subtitle">I'm <b>Aditya Maulana Pamungkas</b> — a Machine Learning Engineer who loves building
+            intelligent systems.</p>
+
+        <div class="skills">
+            <h3>My Skills</h3>
+
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <div class="skill-list">
+                    <span><i class="devicon-python-plain python-colored"></i> Python</span>
+                    <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Machine Learning & Frameworks</h4>
+                <div class="skill-list">
+                    <span><i class="fas fa-brain"></i> Machine Learning</span>
+                    <span><i class="fas fa-network-wired"></i> Deep Learning</span>
+                    <span><i class="devicon-scikitlearn-plain colored"></i> Scikit-Learn</span>
+                    <span><i class="devicon-tensorflow-original colored"></i> TensorFlow</span>
+                    <span><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                    <span><i class="devicon-opencv-plain colored"></i> OpenCV</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>MLOps & Monitoring</h4>
+                <div class="skill-list">
+                    <span><i class="fas fa-project-diagram" style="color: #0194E2;"></i> MLFlow</span>
+                    <span><i class="devicon-prometheus-original colored"></i> Prometheus</span>
+                    <span><i class="devicon-grafana-plain colored"></i> Grafana</span>
+                    <span><i class="devicon-githubactions-plain colored"></i> CI/CD</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Databases</h4>
+                <div class="skill-list">
+                    <span><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                    <span><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                    <span><i class="devicon-sqlite-plain colored"></i> SQLite</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Tools & Environments</h4>
+                <div class="skill-list">
+                    <span><i class="devicon-docker-plain colored"></i> Docker</span>
+                    <span><i class="devicon-anaconda-original colored"></i> Anaconda</span>
+                    <span><i class="devicon-git-plain colored"></i> Git</span>
+                    <span><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Web Development</h4>
+                <div class="skill-list">
+                    <span><i class="devicon-html5-plain colored"></i> HTML</span>
+                    <span><i class="devicon-css3-plain colored"></i> CSS</span>
+                    <span><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links" style="margin-top: 0; margin-bottom: 1rem;">
+            <a href="https://github.com/adityamp0" target="_blank" class="social-item" title="GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/adityamaulanapamungkas/" target="_blank" class="social-item"
+                title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2026 Aditya Maulana Pamungkas. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
