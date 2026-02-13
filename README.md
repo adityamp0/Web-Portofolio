@@ -80,7 +80,7 @@ This project serves as a comprehensive showcase of my skills, certifications, an
 ## 📬 Connectivity
 - **LinkedIn**: [Aditya Maulana Pamungkas](https://www.linkedin.com/in/adityamaulanapamungkas/)
 - **GitHub**: [@adityamp0](https://github.com/adityamp0)
-- **Portfolio Website**: [Live Link](https://adityamp0.github.io/Web-Portofolio/) *(Replace with your actual hosted link)*
+- **Portfolio Website**: [Live Link]((https://adityamp0.github.io/Web-Portofolio/)) 
 
 ---
 Developed with ❤️ by Aditya Maulana Pamungkas.
