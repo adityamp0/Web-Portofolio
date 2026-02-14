@@ -31,6 +31,7 @@ const navLinks = document.querySelector(".nav-links");
 if (mobileMenu && navLinks) {
     mobileMenu.addEventListener("click", () => {
         navLinks.classList.toggle("active");
+        document.body.style.overflow = navLinks.classList.contains("active") ? "hidden" : "auto";
 
         // Change icon from bars to X
         const icon = mobileMenu.querySelector("i");
@@ -45,10 +46,31 @@ if (mobileMenu && navLinks) {
     document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", () => {
             navLinks.classList.remove("active");
+            document.body.style.overflow = "auto";
             mobileMenu.querySelector("i").classList.replace("fa-times", "fa-bars");
         });
     });
 }
+
+// Scroll Reveal Animation (Professional Touch)
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('section, .portfolio-card, .cert-card, .profile-card, .contact-card').forEach(el => {
+    el.classList.add('reveal-on-scroll');
+    observer.observe(el);
+});
 
 // Direct Email Redirection (Outlook/Default Mail Client)
 const form = document.getElementById("contactForm");
@@ -66,17 +88,14 @@ if (form) {
             return;
         }
 
-        // Construct Mailto Link (Structured & Professional)
         const recipient = "ampaditya55@gmail.com";
         const subject = `[Portfolio Inquiry] Message from ${name}`;
         const body = `Name: ${name} 📧 Email: ${email} 💬 Message: ${message} `;
 
         const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body).replace(/%0A/g, '%0D%0A')}`;
 
-        // Redirect to Outlook/Mail Client
         window.location.href = mailtoLink;
 
-        // Optional: show a small success note
         const result = document.getElementById("formResult");
         if (result) {
             result.classList.remove("hidden");
